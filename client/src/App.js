@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header.js";
-
+import Footer from "./components/footer/footer.js";
 function App() {
   return (
     <div className="layout">
@@ -13,9 +13,7 @@ function App() {
         </main>
 
 
-        <footer>
-          footer
-        </footer>
+        <Footer />
       </div>
   
   );
