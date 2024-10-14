@@ -28,3 +28,18 @@ main{
 
 }
 
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+.wrapper .products-wrapper{
+    width: 68%;
+}
+
+.wrapper .filter-wrapper{
+    width: 30%;
+}
+
