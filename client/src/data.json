@@ -14,7 +14,7 @@
         "imageUrl": "/images/project2.jpeg",
         "desc": "This is Product 2",
         "price": 40,
-        "sizes" : ["XL","XXL"]
+        "sizes" : ["S","XXL"]
     },
     {
         "id": "id3", 
@@ -30,6 +30,6 @@
         "imageUrl": "/images/project4.jpeg",
         "desc": "This is Product 4",
         "price": 400,
-        "sizes" : ["XS","M"]
+        "sizes" : ["XS","S"]
     }
 ]
