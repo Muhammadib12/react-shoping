@@ -7,7 +7,7 @@ function Filter(props) {
     <div className="filter-wrapper">
         <h2 className='filter-title'> Filter</h2>
         <div className='num-of-products'>
-            Number of Products 4
+            Number of Products: {props.productsNumber} Products
         </div>
         <div className='filter-by-size'>
             <span>Filter</span>
