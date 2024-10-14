@@ -39,6 +39,26 @@ button:hover {
   background: #000;
 }
 
+.product-info img {
+  display: block;
+  width: 40%;
+  margin: 20px auto;
+}
+.product-info p {
+  color: #2a5ea5;
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 780px) {
   .products-wrapper {
     display: flex;
