@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "../../css/Cart/Cart.css";
 import CheckoutForm from '../CheckoutForm/CheckoutForm';
-
+import Bounce from "react-reveal/Bounce";
 function Cart(props) {
     const [showForm,setShowForm] = useState(false);
 
@@ -22,13 +22,15 @@ function Cart(props) {
     }
 
     return (
+        <Bounce right cascade>
         <div className='cart-wrapper'>
             <div className='cart-title'>
                 {props.cartItem.length === 0 ? "Empty Cart" : <p>
                     There is {props.cartItem.length} items in Cart
                 </p> }    
             </div>
-
+            
+            <Bounce top cascade>
             <div className='cart-items'>
                 {props.cartItem.map(item => (
                     <div className='cart-item' key={item.id}>
@@ -46,6 +48,7 @@ function Cart(props) {
                     </div>
                 ))}
             </div>
+            </Bounce>
                 {
                     props.cartItem.length !== 0 &&
                     <div className='cart-footer'>
@@ -59,6 +62,7 @@ function Cart(props) {
                 {/* CheckOut Form */}
                 <CheckoutForm handleChange={handleChange} submitOrder={submitOrder} showForm={showForm} setShowForm={setShowForm} value={value}/>
         </div>
+        </Bounce>
     );
 }
 
