@@ -1,9 +1,10 @@
 import React from 'react'
 import "../../css/Filter/Filter.css";
+import Bounce from 'react-reveal/Bounce';
 function Filter(props) {
     
     return (
-
+    <Bounce top cascade>
     <div className="filter-wrapper">
         <h2 className='filter-title'> Filter</h2>
         <div className='num-of-products'>
@@ -31,6 +32,7 @@ function Filter(props) {
             </select>
         </div>
     </div>
+    </Bounce>
 )
 }
 
