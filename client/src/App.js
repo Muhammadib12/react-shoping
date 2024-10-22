@@ -6,6 +6,9 @@ import Cart from "./components/Cart/Cart.js";
 // import { words } from "./words.js";
 import data from './data.json';
 import Products from './components/Products/Products.js';
+import { Provider } from 'react-redux';
+import store from './store/Store.js';
+
 function App() {
 
   const [products,setProducts] = useState(data);
@@ -75,7 +78,8 @@ function App() {
   },[cartItem])
 
   return (
-    <div className="layout">
+    <Provider store={store}>
+        <div className="layout">
       
         
       <Header />
@@ -100,6 +104,7 @@ function App() {
 
         <Footer/>
       </div>
+    </Provider>
   
   );
 }
